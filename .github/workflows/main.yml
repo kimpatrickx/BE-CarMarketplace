@@ -1,0 +1,48 @@
+
+
+
+Pull Request Title:
+🚗 Integrate Profile Page with Backend API for Cars Sold and Pending
+
+Description:
+This PR implements a "Profile" page in the React web app that displays data about cars sold and pending sales. The page is fully integrated with the backend, fetching live data via API endpoints and providing options to update the status of pending cars. This feature enhances user experience by presenting real-time, actionable insights into their sales.
+
+Changes Introduced:
+New Features:
+
+Profile Page:
+Displays user details, including name, profile picture, and sales summary.
+Sections for "Cars Sold" and "Pending Sales."
+Sold Cars Section:
+Shows the cars sold and revenue generated.
+
+Pending Sales Section:
+Lists pending cars with details like make, model, price, and status.
+Buttons for approving or rejecting sales, integrated with backend updates.
+
+API Integration:
+Endpoints Used:
+Fetch sold cars data.
+Fetch pending sales data.
+Update the status of a pending car.
+Utilized Axios for API calls with robust error handling and loading indicators.
+State Management:
+
+Added Redux (or Context API) for managing cars' sold and pending data.
+Actions and reducers for:
+Fetching sold cars (FETCH_SOLD_CARS)
+Fetching pending sales (FETCH_PENDING_CARS)
+
+Components Added:
+
+ProfileHeader: Displays user profile details and summary statistics.
+SoldCarsSummary: Showcases sales model, price and date sold.
+PendingCarsTable: A sortable, searchable table of pending sales.
+
+Routing and Security:
+
+Added a /profile route to display the profile page.
+Ensured the route is protected and accessible only to authenticated users.
+Styling:
+
+Custom CSS in Profile.css for a clean, responsive layout.
